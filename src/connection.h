@@ -1,6 +1,0 @@
-#ifndef _adrianx_packet_tcp_client_connection_h_
-#define _adrianx_packet_tcp_client_connection_h_
-
-
-
-#endif//_adrianx_packet_tcp_client_connection_h_
