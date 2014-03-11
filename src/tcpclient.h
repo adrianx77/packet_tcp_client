@@ -61,6 +61,13 @@ namespace adrianx
 		virtual void on_recv(std::vector< uint8_t > & buffer){
 
 			std::cout<< "buffer ="<< buffer.size() <<std::endl;
+            
+            for(int i=0;i<buffer.size();i++)
+            {
+                printf("0x%02X ",buffer[i]);
+            }
+            
+            std::cout<<std::endl<<"<--------end of packet"<<std::endl;
 
 		};
 
