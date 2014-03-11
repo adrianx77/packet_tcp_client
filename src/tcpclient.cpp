@@ -163,6 +163,9 @@ namespace adrianx
 
 	bool tcp_client::push_pending_send( void * data,uint16_t size )
 	{
+		if(!size)
+			return false;
+
 		uint8_t * pack = new uint8_t[size+2];
 		if(!pack)
 			return false;

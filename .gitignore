@@ -11,3 +11,15 @@
 *.lai
 *.la
 *.a
+examples/test/Debug/test.Build.CppClean.log
+*.suo
+*.exe
+*.ilk
+*.pdb
+*.tlog
+*.log
+*.obj
+*.opensdf
+examples/test.sdf
+examples/test/Debug/test.lastbuildstate
+examples/test/Debug/vc110.idb
