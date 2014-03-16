@@ -16,7 +16,7 @@ namespace adrianx
 	bool tcp_client::connect( const std::string & host, uint16_t port )
 	{
 
-		if(boost::interprocess::ipcdetail::atomic_cas32( &_shutdown, 0, 1 )==0)//ÒÑ¾­´¦ÓÚÆô¶¯×´Ì¬
+		if(boost::interprocess::ipcdetail::atomic_cas32( &_shutdown, 0, 1 )==0)//ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬
 			return false;
 
 		bool ok = false;
@@ -78,6 +78,13 @@ namespace adrianx
 
 	bool tcp_client::send( uint8_t * data,uint16_t size )
 	{
+		ifï¼ˆdata == 0)
+			return false;
+		
+		if(size == 0)
+			return false;
+		
+		
 		if(has_stopped())
 			return false;
 
